@@ -8,8 +8,7 @@ require __DIR__ . '/../vendor/autoload.php';
 $app = new \Slim\App;
 $app->get('/hello/{name}', function (Request $request, Response $response) {
   $name = $request->getAttribute('name');
-  $response->getBody()->write("Hello, $name");
-
-  return $response;
+  $data = ['name' => $name];
+  return $response->withJson($data, 200, JSON_UNESCAPED_UNICODE);
 });
 $app->run();
