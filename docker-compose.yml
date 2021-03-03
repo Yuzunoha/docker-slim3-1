@@ -35,4 +35,4 @@ services:
     ports:
       - 20081:80
     volumes:
-      - ./phpmyadmin/sessions:/sessions
+      - ./docker/phpmyadmin/sessions:/sessions
