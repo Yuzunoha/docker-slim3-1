@@ -15,7 +15,6 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get update \
   && apt-get install -y git zip unzip \
   && apt-get install -y sudo \
-  && apt-get install -y vim \
   && apt-get install -y libicu-dev \
   && apt-get install -y libonig-dev \
   && apt-get install -y nodejs \
