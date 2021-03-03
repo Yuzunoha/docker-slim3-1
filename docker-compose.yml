@@ -25,7 +25,6 @@ services:
       TZ: Asia/Tokyo
     volumes:
       - ./docker/mysql/data:/var/lib/mysql
-      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
